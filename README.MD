@@ -116,3 +116,17 @@ Definir filas y columnas:
 **grind implicito**: Es cuando tenemos filas y/o columnas que no definimos pero forman parte de nuestro grid
 
 **grid explicito**:  Es cuando definimos el numero de columnas y/o filas.
+
+Clase 6
+# Grids identados y tipos de displays :neckbeard:
+
+Carpeta: "Displays", Archivo: "index.html"
+
+Display subgrid para heredar la configuración del grid padre (cuando se esten anidando grids).
+
+```display: subgrid; // No disponible aun```
+
+
+Display inline-grid muestra el grid en una sola linea:
+
+```display: inline-grid; // No disponible aun```
