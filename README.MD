@@ -130,3 +130,24 @@ Display subgrid para heredar la configuración del grid padre (cuando se esten a
 Display inline-grid muestra el grid en una sola linea:
 
 ```display: inline-grid; // No disponible aun```
+
+
+Clase 7
+# Espaciado entre filas y columnas :frowning:
+
+/play secret
+
+:warning: Importante: Chrome 66 hizo cambios en css-grid, específicamente en gap y ahora es simplemente gap:
+
+Espaciado entre columnas
+```
+column-gap: value;
+```
+Espaciado entre filas
+```
+row-gap: value;
+```
+Espaciado entre filas y columnas
+```
+gap: rows columns;
+```
