@@ -3,6 +3,21 @@
 ![Meme](https://i.imgflip.com/1c7cy8.jpg)
 :bowtie:
 
+             F I L A
+                C
+
+                O
+
+                L
+
+                U
+
+                M
+
+                N
+
+                A
+
 Clase 2
 
 ## ¿Qué es CSS grids?
@@ -44,12 +59,17 @@ Ejemplo:
 ```
 
 **Grid Line**: Lineas divisorias horizontales y verticales.
+![Line](https://cdn-images-1.medium.com/max/800/1*5VM-Z4z256bRMFfDdUQlTA.png)
 
 **Grid Track**: Espacio entre dos líneas adyacentes. Filas y columnas.
+![Track](https://cdn-images-1.medium.com/max/800/1*z6n-hrQYhoSKZ4ywScTfYQ.png)
 
 **Grid Cell**: Celdas, espacio en dos filas adyacentes y 2 columnas adyacentes.
+![Cell](https://cdn-images-1.medium.com/max/800/1*xelqBjICK3c4Ec1yJGGgjw.png)
 
 **Grid Area**: Espacio rodeado por 4 grid lines
+![Area](https://cdn-images-1.medium.com/max/800/1*A0Hf4dSee1awBSkRMgAH4w.png)
+
 
 Clase 4
 
@@ -165,7 +185,97 @@ Carpeta: "Funciones", Archivo: "index.html"
 
 Unidad de medida: fracciones `fr` distrubuye el espacio disponible en formas iguales.
 
+Si tenemos tres columnas, y a cada una de ella le asignamos un valor de 1fr, el ancho del grid track vertical se repetirá por igual hasta ocupar el ancho total.
+
+Si en lugar de ser tres columnas con un mismo ancho le asignamos a una de ellas el valor 2fr, esta ocupará el doble de ancho que las columnas a las que le hemos asignado el valor 1fr.
+
+Este valor lo podemos asignar tanto a columnas como a filas.
+
 Funciones:
 `repeat(cantidad, valor)` Para usar el mismo valor varias veces
 
 `minmax(min, max)` Agregar un valor minimo y maximo para el tamaño al hacer responsive
+
+
+Clase 9
+# Definiendo áreas de contenido :construction:
+
+Carpeta: "Areas", Archivo: "index.html"
+
+![Meme2](https://i.imgflip.com/2cv0eg.jpg)
+
+Empezamos !!
+
+¿Cuantas filas y columnas se observan en la siguiente imagen?
+Vamos a construir el siguiente grid como ejemplo para conocer algunas propiedades y valores:
+![Construir](https://cdn-images-1.medium.com/max/800/1*jOUgLUpvIFXOTCN592ZBRg.png)
+
+Partimos de un html simple.
+```
+<section class="container">
+    <div class="item header">header</div>
+    <div class="item left">left</div>
+    <div class="item contenido">contenido</div>
+    <div class="item footer">footer</div>
+</section>
+```
+En el CSS o en mi caso la etiqueta `<style>`ponemos lo siguiente 
+
+¡Empezamos!
+Establecemos las columnas y filas con la propiedad `grid-template`. Esta propiedad se le asigna el `grid` al `container` 
+
+Con la propiedad `grid-template-areas` definimos los nombres de las áreas de contenido.
+
+La propiedad `grid-area asigna` a un `**item**` el nombre de area que creamos con `grid-template-areas` haciendole referencia y así poder utilizarlo.
+
+En el ejemplo `grid-template` ponemos 3 filas `/` 2 columnas y en `grid-template-areas` definimos los nombres y como estaran establecidas cada aréa, mas abajo defino su color y a que aréa pertenece.
+
+```
+.container {
+      display: grid;
+      grid-template: 100px 1fr 150px/ 200px 1fr;
+      gap: 10px;
+      height: 100vh;
+      grid-template-areas: "header header" 
+                            "left contenido" 
+                            "footer footer";
+    }
+    .header {
+        background-color: #5f4d68;
+        grid-area: header;
+      }
+      .left {
+        background-color: #9d7eae;
+        grid-area: left;
+      }
+      .contenido {
+        background-color: #7dc7db;
+        grid-area: contenido;
+      }
+      .footer {
+        background-color: #b6e585;
+        grid-area: footer;
+      }
+      .item {
+      padding: 10px;
+      border: 1px;
+    }
+    .item:nth-of-type(4){
+      overflow: auto;
+      display: grid;
+      grid-template: 50px 50px 50px / 100px 100px 100px;
+    }
+```
+La disposición de los item según el código anterior es la siguiente:
+![Captura uno](Area/img/01.png)
+![Meme3](https://static.platzi.com/media/user_upload/descarga-511bf4dc-464e-4ffc-a096-1f665db815e7.jpg)
+
+
+
+Nota:
+
+ `vh` y `vw`: Las medidas vh y vw son medidas relativas de acuerdo al viewport. `Vh` hace referencia a la centésima parte de la altura del viewport y vw a la centésima parte del ancho del viewport.
+- 1vh = 1% de la altura del viewport
+- 100vh = altura del viewport
+- 1vw = 1% del ancho del viewport
+- 100vw = ancho del viewport.
