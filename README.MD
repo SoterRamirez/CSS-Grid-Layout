@@ -135,7 +135,7 @@ Display inline-grid muestra el grid en una sola linea:
 Clase 7
 # Espaciado entre filas y columnas :frowning:
 
-/play secret
+Carpeta: "Displays", Archivo: "index.html"
 
 :warning: Importante: Chrome 66 hizo cambios en css-grid, específicamente en gap y ahora es simplemente gap:
 
@@ -151,3 +151,21 @@ Espaciado entre filas y columnas
 ```
 gap: rows columns;
 ```
+Notas
+
+```grid-column-gap: value;``` Espaciado entre columnas
+
+```grid-row-gap: value;``` Espaciado entre filas
+
+```grid-gap:``` rows columns Espaciado
+
+Clase 8
+# Repetidores, unidades de medida y funciones :loudspeaker:
+Carpeta: "Funciones", Archivo: "index.html"
+
+Unidad de medida: fracciones `fr` distrubuye el espacio disponible en formas iguales.
+
+Funciones:
+`repeat(cantidad, valor)` Para usar el mismo valor varias veces
+
+`minmax(min, max)` Agregar un valor minimo y maximo para el tamaño al hacer responsive
