@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Row-size</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .container {
+      display: grid;
+      grid-gap: 4px;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      
+
+    }
+
+    .item {
+      border: 1px solid #eb4545;
+      padding: 10px;
+      background-color: rgb(73, 172, 211);
+      color: white;
+      display: flex;
+      /* Flexbox */
+      justify-content: center;
+      /* Centrarlo horizontalmente */
+      align-items: center;
+      /* Centrarlo verticalmente */
+    }
+
+    .item:nth-child(1) {
+      grid-column: 1 / -1;
+      grid-row: 1 / span 1;
+    }
+
+    .item:nth-child(2) {
+      grid-column: 1 / span 3;
+      grid-row: 2 / span 2;
+    }
+
+    .item:nth-child(3) {
+      grid-column: 4 / span 2;
+      grid-row: 2 / span 2;
+    }
+
+    .item:nth-child(4) {
+      grid-column: 6 / span 2;
+      grid-row: 2 / span 1;
+    }
+
+    .item:nth-child(5) {
+      grid-column: 6 / span 1;
+      grid-row: 3 / span 1;
+    }
+
+    .item:nth-child(6) {
+      grid-column: 7 / span 1;
+      grid-row: 3 / span
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <item class="item"><h1>Definiendo el tamaño de filas dentro de un grid</h1></item>
+    <item class="item">item #2</item>
+    <item class="item">item #3</item>
+    <item class="item">item #4</item>
+    <item class="item">item #5</item>
+    <item class="item">item #6</item>
+  </section>
+</body>
+
+</html>

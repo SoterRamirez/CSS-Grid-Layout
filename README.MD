@@ -314,3 +314,41 @@ grid-column: 1 / -1;
 Nota:
 
 [Para jugar y complementar esta clase](https://cssgridgarden.com/#es)
+
+Clase 10 
+# Definiendo el tamaño de filas dentro de un grid
+```
+grid-row-start: valor;
+grid-row-end: valor;
+```
+Igual que las columnas para escribir esto en una sola linea:
+```
+grid-row: inicio / final;
+```
+El negativo significa que comienza contando desde el final.
+Por ejemplo si quieres que contenga todo el ancho hasta que empieza la ultima columna utilizarías
+```
+grid-column: 1 / -2;
+```
+Para definir las columnas utilizamos
+```
+grid-column-star:1; /*en que columna iniciara nuestor elemento*/
+grid-column-end: 3; /*en que columna terminara recordemos que se cuenta desde el primer grid line*/
+grid-column: 1/3; /*esta es la forma de agrupar el start y el end en una sola linea de codigo start/end */
+
+grid-column: 2/span 2; /*Con span indicamos los lugares que va a ocupar */
+grid-column: 1/-1; /* Con esto lograremos que el elemento ocupe todo el espacio de mis columnas */
+```
+Para definir filar utilizamos 
+```
+grid-row-star:1; /*en que fila iniciara nuestor elemento*/
+grid-row-end: 3; /*en que fila terminara recordemos que se cuenta desde el primer grid line*/
+grid-row: 1/3; /*esta es la forma de agrupar el start y el end en una sola linea de codigo start/end */
+
+grid-row: 2/span 2; /*Con span indicamos los lugares que va a ocupar */
+grid-row: 1/-1; /* Con esto lograremos que el elemento ocupe todo el espacio de mis filas*/
+```
+
+```
+grid-column: [# columna donde inicia] / [#columna donde termina]
+```
