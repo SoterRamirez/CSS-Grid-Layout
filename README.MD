@@ -17,6 +17,7 @@
                 N
 
                 A
+# **2. Propiedades de CSS Grid Layout**
 
 Clase 2
 
@@ -268,9 +269,8 @@ En el ejemplo `grid-template` ponemos 3 filas `/` 2 columnas y en `grid-template
 ```
 La disposición de los item según el código anterior es la siguiente:
 ![Captura uno](Area/img/01.png)
+
 ![Meme3](https://static.platzi.com/media/user_upload/descarga-511bf4dc-464e-4ffc-a096-1f665db815e7.jpg)
-
-
 
 Nota:
 
@@ -279,3 +279,38 @@ Nota:
 - 100vh = altura del viewport
 - 1vw = 1% del ancho del viewport
 - 100vw = ancho del viewport.
+
+Clase 10 
+## Definiendo el tamaño de los columnas dentro de un grid
+Carpeta: "Tamaño", Archivo: "index.html"
+
+Si conocemos bien el número de líneas que ocupa cada elemento no hay riesgo a equivocarnos.
+
+Sintaxis sin resumir:
+```
+grid-column-start: 1;
+grid-column-end: 3;
+```
+Sintaxis resumida:
+```
+grid-column: 1 / 3;
+grid-column: inicio / final;
+```
+
+Sintaxis definiendo por líneas:
+```
+grid-column: 1 / 3;
+```
+Sintaxis definiendo por columnas:
+```
+grid-column: 1 / span 2;
+```
+++Sintaxis para ocupar todo el ancho dinamicamente: ++
+```
+grid-column: 1 / -1;
+```
+
+
+Nota:
+
+[Para jugar y complementar esta clase](https://cssgridgarden.com/#es)
