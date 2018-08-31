@@ -53,7 +53,7 @@ Ejemplo:
 
 Clase 4
 
-# Definiendo columnas
+# Definiendo columnas :sunglasses:
 
 ![Definiendo columnas](https://cdn.scotch.io/1/lD6AXrDYSA26ZoveE7Nz_uTQ64cA.png)
 
@@ -99,3 +99,20 @@ Designar columnas :
 </body>
 </html>
 ```
+
+Clase 5 :alien:
+# Definiendo filas
+
+Carpeta: "Filas", Archivo: "index.html"
+
+Para definir las filas:
+
+```grid-template-rows: valores;```
+
+Definir filas y columnas:
+
+```grid-template: filas / columnas;```
+
+**grind implicito**: Es cuando tenemos filas y/o columnas que no definimos pero forman parte de nuestro grid
+
+**grid explicito**:  Es cuando definimos el numero de columnas y/o filas.
