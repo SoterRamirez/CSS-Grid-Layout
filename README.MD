@@ -315,7 +315,7 @@ Nota:
 
 [Para jugar y complementar esta clase](https://cssgridgarden.com/#es)
 
-Clase 10 
+Clase 11
 # Definiendo el tamaño de filas dentro de un grid
 ```
 grid-row-start: valor;
