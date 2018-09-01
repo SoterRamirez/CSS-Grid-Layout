@@ -364,3 +364,23 @@ Podemos usar nombres para darle tamaño a las celdas definiendo de que linea a q
 Lo que hacemos es confeccionar manualmente (sin repeat) las filas y columnas y luego entre parentesis recto le ponemos el nombre a cada linea que componen la grilla.
 		
 `[lo que está entre parentesis recto es el nombre que pasará a tener la linea]`
+
+
+Clase 13
+# Manejando el grid implícito
+Carpeta: "Grid-implicito", Archivo: "index.html"
+
+Para cambiar el flujo automático de mi grid:
+```grid-auto-flow: column;```
+
+Por defecto viene `grid-auto-flow: row;`
+
+Para asignar el valor por defecto de el espacio de las columnas o filas que no han sido asignadas:
+```
+grid-auto-columns: valores;
+grid-auto-rows: valores;
+```
+
+`grid-auto-rows` : especifica la altura de las filas añadidas del grid implícito.
+
+`grid-auto-colums` : especifica el ancho de las columnas añadidas del grid implícito
