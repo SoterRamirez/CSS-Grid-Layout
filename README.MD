@@ -317,6 +317,8 @@ Nota:
 
 Clase 11
 # Definiendo el tamaño de filas dentro de un grid
+Carpeta: "Row-size", Archivo: "index.html"
+
 ```
 grid-row-start: valor;
 grid-row-end: valor;
@@ -352,3 +354,13 @@ grid-row: 1/-1; /* Con esto lograremos que el elemento ocupe todo el espacio de 
 ```
 grid-column: [# columna donde inicia] / [#columna donde termina]
 ```
+
+Clase 12 
+# Definiendo el nombre de lineas
+Carpeta: "Nombre-linea", Archivo: "index.html"
+
+Podemos usar nombres para darle tamaño a las celdas definiendo de que linea a que linea vamos
+
+Lo que hacemos es confeccionar manualmente (sin repeat) las filas y columnas y luego entre parentesis recto le ponemos el nombre a cada linea que componen la grilla.
+		
+`[lo que está entre parentesis recto es el nombre que pasará a tener la linea]`
