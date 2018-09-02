@@ -444,3 +444,11 @@ Para alinear toda nuestro grid utilizamos las propiedades
 Estas propiedades pueden recibir de valores:
 
 **start, center, end, stretch, space-around, space-between, space-evenly**
+
+
+
+# Proyectos DEMO 
+
+## Layout de Instagram
+- Carpeta Instagram / index.html, style.css
+![Captura](Instagram/img/captura.png)
