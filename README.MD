@@ -384,3 +384,32 @@ grid-auto-rows: valores;
 `grid-auto-rows` : especifica la altura de las filas añadidas del grid implícito.
 
 `grid-auto-colums` : especifica el ancho de las columnas añadidas del grid implícito
+
+
+Clase 14
+# Alineación de contenido
+Carpeta: Alineando-items / Archivo: index.html
+
+Para alinear contenido padre:
+
+`justify-items: valor;` para alineación horizontal
+
+`align-items: valor;` para alineación vertical
+
+Los valores que toman por defecto es stretch el cual hace que tomen todo el valor asignado en la fila o columna.
+
+Para asignar la alineación de un solo elemento podemos usar (items dentro de padre):
+
+`justify-self: valor;` que manipula el objeto en sentido horizontal.
+
+`align-self: valor;` que manipula el objeto en sentido vertical.
+
+## Valor:
+
+`Stretch:` Estira el contenido al espacio que nos de el grid.
+
+`Start:` Coloca el contenido hacia el inicio(izquierda), y los elementos ocupan el ancho que tienen de contenido.
+
+`End:` Coloca el contenido hacia la derecha, igual que start los elementos ocuparán el ancho que tienen de contenido.
+
+`Center:` Los elementos quedarán al centro de la pantalla.
