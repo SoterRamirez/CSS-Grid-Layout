@@ -413,3 +413,34 @@ Para asignar la alineación de un solo elemento podemos usar (items dentro de pa
 `End:` Coloca el contenido hacia la derecha, igual que start los elementos ocuparán el ancho que tienen de contenido.
 
 `Center:` Los elementos quedarán al centro de la pantalla.
+
+Clase 15 
+# Alineación de filas y columnas
+Carpeta: Alineando-contenidos / Archivo: index.html
+
+Para alinear mis items del grid utilizamos
+
+- **justify-items**: Los alinea con respecto a la horizontal.
+
+- **align-items**: Los alinea con respecto al eje vertical.
+
+Pero con las anteriores propiedades que definimos en nuestro container, afectaran a todos sus hijos, si queremos que solo afecte en especifico a uno utilizamos:
+```
+.item:nth-of-type(5){
+	align-self;:
+	justify-self:;	
+} 
+```
+Los valores que pueden recibir dichas propiedades son.
+
+- **start, center, end, stretch**
+
+Para alinear toda nuestro grid utilizamos las propiedades
+
+- **justify-content:** Lo alinea con respecto a el eje horizontal.
+
+- **align-content:** Lo alinea con respecto al eje vertical.
+
+Estas propiedades pueden recibir de valores:
+
+**start, center, end, stretch, space-around, space-between, space-evenly**
